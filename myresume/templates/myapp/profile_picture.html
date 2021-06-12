@@ -1,0 +1,12 @@
+{% extends "myapp/index.html" %}
+{% block body_block %}
+
+<div class="container">
+  <div class="pp">
+    <h1>Hi!</h1>
+    {% load staticfiles %}
+    <img align='center' id="mypic" src='{% static "images/mypic.jpg" %}' class="img-thumbnail" alt="My Picture"  >
+  </div>
+</div>
+
+{% endblock %}

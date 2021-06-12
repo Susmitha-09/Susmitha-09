@@ -1,0 +1,18 @@
+{% extends 'myapp/index.html' %}
+{% block body_block %}
+<div class="container">
+    <h1 id='about'>ABOUT ME:</h1>
+    <table><tr><button class="btn btn-dark" type="button" name="button"><a class="navbar-brand" href="{% url 'profile_picture' %}">Profile Picture</a></button></tr></table><br>
+    <table><tr><button class="btn btn-dark" type="button" name="button"><a class="navbar-brand" href="{% url 'project_experience' %}">Project Experience</a></button></tr></table><br>
+    <table><tr><button class="btn btn-dark" type="button" name="button"><a class="navbar-brand" href="{% url 'research' %}">Research Experience</a></button></tr></table><br>
+    <table><tr><button class="btn btn-dark" type="button" name="button"><a class="navbar-brand" href="{% url 'achievements' %}">Achievements</a></button></tr></table><br>
+    <table><tr><button class="btn btn-dark" type="button" name="button"><a class="navbar-brand" href="{% url 'technical_skills' %}">Technical Skills</a></button></tr></table><br>
+    <table><tr><button class="btn btn-dark" type="button" name="button"><a class="navbar-brand" href="{% url 'certifications_workshops' %}">Certifications and Workshops</a></button></tr></table><br>
+    <table><tr><button class="btn btn-dark" type="button" name="button"><a class="navbar-brand" href="{% url 'education' %}">Educational Qualifications</a></button></tr></table><br>
+    <table><tr><button class="btn btn-dark" type="button" name="button"><a class="navbar-brand" href="{% url 'strengths' %}">Strengths</a></button></tr></table><br>
+    <table><tr><button class="btn btn-dark" type="button" name="button"><a class="navbar-brand" href="{% url 'extracurricular_activities' %}">Extracurricular Activities</a></button></tr></table><br>
+    <table><tr><button class="btn btn-dark" type="button" name="button"><a class="navbar-brand" href="{% url 'hobbies' %}">Hobbies</a></button></tr></table><br>
+    <table><tr><button class="btn btn-dark" type="button" name="button"><a class="navbar-brand" href="{% url 'personal_details' %}">Personal Details</a></button></tr></table><br>
+</div>
+
+{% endblock %}

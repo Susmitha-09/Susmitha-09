@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ProfilePage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-dark" style="background-color: #900C3F;">
+      <!-- <div class="navbar-nav"> -->
+      <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- <a class="navbar-brand" href="{% url 'index' %}">PROFILE</a> -->
+        <span class="navbar navbar-brand" href="{% url 'index' %}"><img id="mypic" src='{% static "images/logo.jpeg" %}' alt="ProfilePic"
+          style="width:60px; height:60px;border:2px solid yellow;" class="d-inline-block align-text-center"><b>PROFILE</b></span>
+          <button class="btn btn-light" type="submit"><a class="nav-brand" href="{% url 'index' %}"><b>Home</b></a></button>
+        <!-- <a class="nav-brand" href="{% url 'index' %}">Home</a> -->
+        <button type="button" class="btn btn-light"><a class="nav-item nav-brand" href="{% url 'about' %}"><b>About</b></a></button>
+        <!-- <a class="nav-item nav-brand" href="{% url 'about' %}">About</a> -->
+        <!-- <a class="nav-item nav-link" href="{% url 'profile_picture' %}">Profile Picture</a> -->
+      </div>
+    </div>
+    </nav>
+
+      <!-- <div class="container"> -->
+      <!-- <div class="jumbotron"> -->
+        <!-- <h1 id='index'>Hi!</h1> -->
+      <!-- </div> -->
+      <!-- {% load staticfiles %}
+      <img align='left' class="mypic" src='{% static "images/mypic.jpg" %}' alt="My Picture" style='width:300px; height:auto; border:2px solid red;'> -->
+      <!-- </div> -->
+
+    <div class="container-fluid">
+      {% block body_block %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
